@@ -339,6 +339,11 @@ function App() {
                     Certificados
                   </a>
                 </li>
+                <li class="nav-item">
+                  <a class="nav-link js-scroll-trigger" href="#awards">
+                    Portafolio
+                  </a>
+                </li>
               </ul>
             </div>
           </nav>
