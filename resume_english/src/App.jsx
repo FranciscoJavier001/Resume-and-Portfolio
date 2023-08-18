@@ -13,7 +13,7 @@ function App() {
           />
           <meta name="description" content="" />
           <meta name="author" content="" />
-          <title>C.V. - Francisco Javier Martinez</title>
+          <title>Francisco Javier Martinez</title>
           <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
 
           <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"></script>
