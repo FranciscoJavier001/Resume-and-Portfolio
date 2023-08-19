@@ -1,8 +1,12 @@
 import "./App.css";
+import { FaReact, FaHeart } from "react-icons/fa";
 
 function App() {
   return (
     <>
+      <div>
+        <FaReact /> I love <FaHeart /> React Icons!
+      </div>
       {/* <!DOCTYPE html> */}
       <html lang="en">
         <head>
