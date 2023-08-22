@@ -1,47 +1,67 @@
-import { Link, NavLink } from "react-router-dom"; //* Poder navegar entre URL's */
+import "./styles.css";
 
 export const Navbar = () => {
   //* Variable a Exportar */
   return (
-    <>
-      {/* Lo que voy a renderizar */}
-      <nav className="navbar navbar-expand-sm navbar-dark bg-dark">
-        {/* Esta es la barra de navegacion con clases de Bootstrap */}
-        <Link className="navbar-brand" to="/">
-          {/* Es el Brand, osea el primer enlace */}
-          HeroesApp {/* Le cambie el nombre */}
-        </Link>
-        <div>
-          {/* Simplemente un div */}
-          <div className="navbar-nav">
-            {/* Clase, para que esten todos alineados horizontalmente */}
-            <NavLink
-              className={(
-                { isActive } //* Clase que recibe un parametro */
-              ) => `nav-item nav-link  ${isActive ? "active" : ""}`} //* Donde este seleccionado, ponlo en color blanco y dejalo gris */
-              to="/marvel">
-              {/* Ruta a donde te voy a redirigir */}
-              Marvel {/* Lo que dice el espacio en el navbar */}
-            </NavLink>
-            <NavLink
-              className={(
-                { isActive } //* Clase que recibe un parametro */
-              ) => `nav-item nav-link  ${isActive ? "active" : ""}`} //* Donde este seleccionado, ponlo en color blanco y dejalo gris */
-              to="/dc">
-              {/* Ruta a donde te voy a redirigir */}
-              DC {/* Lo que dice el espacio en el navbar */}
-            </NavLink>
-            <NavLink
-              className={(
-                { isActive } //* Clase que recibe un parametro */
-              ) => `nav-item nav-link  ${isActive ? "active" : ""}`} //* Donde este seleccionado, ponlo en color blanco y dejalo gris */
-              to="/search">
-              {/* Ruta a donde te voy a redirigir */}
-              Search {/* Lo que dice el espacio en el navbar */}
-            </NavLink>
-          </div>
-        </div>
-      </nav>
-    </>
+    <nav
+      className="navbar navbar-expand-lg navbar-dark bg-primary fixed-top"
+      id="sideNav">
+      <a className="navbar-brand js-scroll-trigger" href="#page-top">
+        <span className="d-block d-lg-none">
+          Francisco Javier Martinez Duran
+        </span>
+        <span className="d-none d-lg-block">
+          <img
+            className="img-fluid img-profile rounded-circle mx-auto mb-2"
+            src="img/profile.jpg"
+            alt="..."
+          />
+        </span>
+      </a>
+      <button
+        className="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarResponsive"
+        aria-controls="navbarResponsive"
+        aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span className="navbar-toggler-icon"></span>
+      </button>
+      <div className="collapse navbar-collapse" id="navbarResponsive">
+        <ul className="navbar-nav">
+          <li className="nav-item">
+            <a className="nav-link js-scroll-trigger" href="#about">
+              Sobre Mi
+            </a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link js-scroll-trigger" href="#experience">
+              Experiencia
+            </a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link js-scroll-trigger" href="#education">
+              Educacion
+            </a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link js-scroll-trigger" href="#skills">
+              Habilidades
+            </a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link js-scroll-trigger" href="#interests">
+              Intereses
+            </a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link js-scroll-trigger" href="#awards">
+              Certificados
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
   );
 };

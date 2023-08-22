@@ -1,10 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./App.jsx";
-import "./index.css";
+import { BrowserRouter } from "react-router-dom"; //* Importacion para navegar entre rutas */
+
+import ResumeApp from "./ResumeApp.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <ResumeApp />
+    </BrowserRouter>
   </React.StrictMode>
 );
